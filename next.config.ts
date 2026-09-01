@@ -1,5 +1,7 @@
 import type { NextConfig } from 'next';
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+
 const nextConfig: NextConfig = {
   output: 'export',
   images: {
@@ -9,8 +11,8 @@ const nextConfig: NextConfig = {
     includePaths: ['./src/static/css'],
     silenceDeprecations: ['import'], // Silence @import deprecation warnings
   },
-  basePath: process.env.NODE_ENV === 'production' ? '' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
+  basePath,
+  assetPrefix: basePath,
   trailingSlash: true,
 
   // Turbopack configuration

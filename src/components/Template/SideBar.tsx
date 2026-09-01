@@ -2,12 +2,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
+import { withBasePath } from '@/lib/sitePath';
+
 const SideBar: React.FC = () => (
   <section id="sidebar">
     <section id="intro">
       <Link href="/" className="logo" aria-label="Haowei Chen, home">
         <Image
-          src="/images/cat-avatar-original.png"
+          src={withBasePath('/images/cat-avatar-original.png')}
           alt="White cat avatar"
           width={200}
           height={200}
