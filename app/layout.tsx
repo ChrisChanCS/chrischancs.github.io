@@ -21,39 +21,31 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://chrischancs.github.io/haowei.github.io/'),
   title: {
-    default: "Yiqi Huang",
-    template: "%s | Yiqi Huang",
+    default: "Haowei Chen's Home Page",
+    template: '%s | Haowei Chen',
   },
   description:
-    'Co-founder & CTO building LLM security tools. Previously VP Engineering, YC alum, Stanford ICME.',
+    'Haowei Chen is a Ph.D. student in Computer Science at UT Austin working in distributed systems and LLM serving systems.',
   keywords: [
-    "Yiqi Huang",
-    'LLM security',
-    'machine learning',
-    'CTO',
-    'startup founder',
-    'YC',
+    'Haowei Chen',
+    'distributed systems',
+    'LLM serving systems',
+    'computer science',
+    'the university of texas at austin',
+    'UT Austin',
   ],
-  authors: [{ name: "Yiqi Huang" }],
-  creator: "Yiqi Huang",
-  metadataBase: new URL('https://mldangelo.com'),
+  authors: [{ name: 'Haowei Chen' }],
+  creator: 'Haowei Chen',
   openGraph: {
     type: 'website',
+    url: 'https://chrischancs.github.io/haowei.github.io/',
     locale: 'en_US',
-    url: 'https://mldangelo.com',
-    siteName: "Yiqi Huang",
-    title: "Yiqi Huang",
+    siteName: 'Haowei Chen',
+    title: 'Haowei Chen',
     description:
-      'Co-founder & CTO building LLM security tools. Previously VP Engineering, YC alum, Stanford ICME.',
-    images: [
-      {
-        url: '/images/me.jpg',
-        width: 1200,
-        height: 630,
-        alt: "Yiqi Huang",
-      },
-    ],
+      'Ph.D. student in Computer Science at UT Austin working in distributed systems and LLM serving systems.',
   },
   robots: {
     index: true,

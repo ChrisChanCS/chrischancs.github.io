@@ -8,25 +8,34 @@
 
 #intro {
   .logo {
-    border-bottom: 0;
+    border: solid 4px _palette(bg);
+    border-radius: 50%;
+    box-shadow:
+      0 0 0 1px _palette(border),
+      0 0.75em 2em rgba(0, 0, 0, 0.08);
     display: inline-block;
+    height: 10em;
     margin: 0 0 (_size(element-margin) * 0.5) 0;
     overflow: hidden;
     position: relative;
+    width: 10em;
 
     img {
-      width: 10em;
-      height: 10em;
-      object-fit: cover;
-      border-radius: 50%;
       display: block;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.12);
+      transform-origin: center;
+      width: 100%;
     }
   }
 
   header {
+    h1,
     h2 {
-      font-size: 1.5em;
+      font-size: 1.65em;
       font-weight: _font(weight-heading-extrabold);
+      margin-bottom: 0.7rem;
     }
 
     p {
@@ -34,11 +43,40 @@
     }
   }
 
+  .profile-contact {
+    @include vendor('align-items', 'flex-start');
+    @include vendor('display', 'flex');
+    @include vendor('flex-direction', 'column');
+    font-family: _font(family-heading);
+    font-weight: _font(weight-heading);
+    gap: 0;
+    letter-spacing: _font(kerning-heading);
+    line-height: 2.5;
+    margin: 0 0 2em;
+    text-transform: none;
+
+    a {
+      border-bottom-color: _palette(border-alt);
+
+      &:first-child {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  .profile-affiliation {
+    color: _palette(fg);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-top: 1rem;
+  }
+
   @include breakpoint(large) {
     margin: 0 0 _size(section-spacing) 0;
     text-align: center;
 
     header {
+      h1,
       h2 {
         font-size: 2em;
       }
@@ -46,6 +84,11 @@
       p {
         font-size: 0.7em;
       }
+    }
+
+    .profile-contact {
+      @include vendor('align-items', 'center');
+      @include vendor('justify-content', 'center');
     }
   }
 
@@ -62,8 +105,9 @@
     }
 
     header {
+      h1,
       h2 {
-        font-size: 1.25em;
+        font-size: 1.5em;
       }
 
       > :last-child {

@@ -1,11 +1,11 @@
 {
   "name": "personal-site",
   "version": "4.0.0",
-  "homepage": "https://17xiaoyi.github.io/",
+  "homepage": "https://chrischancs.github.io/haowei.github.io/",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/17xiaoyi/17xiaoyi.github.io.git"
+    "url": "https://github.com/ChrisChanCS/haowei.github.io.git"
   },
   "engines": {
     "node": ">=20.x"

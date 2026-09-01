@@ -1,30 +1,23 @@
-'use client';
-
-import Markdown from 'markdown-to-jsx';
-
 import Link from 'next/link';
 import React from 'react';
 
-import { aboutMarkdown } from '@/data/about';
+import ResearchProfile from '@/components/Research/Profile';
 
 import PageWrapper from '../components/PageWrapper';
-
-const count = (str: string) =>
-  str.split(/\s+/).filter((word) => word !== '').length;
 
 export default function AboutPage() {
   return (
     <PageWrapper>
-      <article className="post markdown" id="about">
+      <article className="post" id="about">
         <header>
           <div className="title">
             <h2>
-              <Link href="/about">About Me</Link>
+              <Link href="/about">Academic profile</Link>
             </h2>
-            <p>(in about {count(aboutMarkdown)} words)</p>
+            <p>Research and publications</p>
           </div>
         </header>
-        <Markdown>{aboutMarkdown}</Markdown>
+        <ResearchProfile />
       </article>
     </PageWrapper>
   );

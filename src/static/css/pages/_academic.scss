@@ -1,0 +1,96 @@
+/* Academic profile */
+
+#index .home-intro {
+  font-size: 0.84em;
+  letter-spacing: 0.12em;
+}
+
+@media screen and (min-width: 981px) {
+  #index > header {
+    margin-bottom: 2.5em;
+
+    .title {
+      padding-bottom: 2.75em;
+      padding-top: 3em;
+    }
+  }
+}
+
+/* Publications follow the same type and colour system as the intro. */
+.simple-research > h2 {
+  color: _palette(fg-bold);
+  font-family: _font(family-heading);
+  font-size: 1rem;
+  font-weight: _font(weight-heading-extrabold);
+  letter-spacing: 0.16em;
+  line-height: 1.65;
+  margin: 0 0 0.7rem;
+  text-transform: uppercase;
+}
+
+.simple-publication {
+  border-bottom: solid 1px _palette(border);
+  font-family: _font(family);
+  padding: 0.65rem 0;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  h3 {
+    color: _palette(fg);
+    font-family: _font(family-heading);
+    font-size: 0.9rem;
+    font-weight: _font(weight-heading-bold);
+    letter-spacing: 0.025em;
+    line-height: 1.55;
+    margin: 0 0 0.2rem;
+    text-transform: none;
+  }
+}
+
+.simple-publication__authors,
+.simple-publication__details {
+  font-family: _font(family);
+  margin: 0;
+}
+
+.simple-publication__authors {
+  color: _palette(fg);
+  font-size: 0.86rem;
+  line-height: 1.55;
+
+  strong {
+    color: _palette(fg);
+    font-weight: _font(weight-bold);
+    text-decoration: underline;
+    text-decoration-color: _palette(border-alt);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+}
+
+.simple-publication__details {
+  align-items: center;
+  color: _palette(fg);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.84rem;
+  gap: 0.1875rem 0.5rem;
+  line-height: 1.55;
+  margin-top: 0.3125rem;
+
+  a {
+    border-bottom: dotted 1px _palette(border-alt);
+    color: #985050;
+    font-style: normal;
+    font-weight: _font(weight-bold);
+  }
+}
+
+.simple-publication__paper-link {
+  color: _palette(fg-light);
+  font-size: 0.8rem;
+  font-style: normal;
+  white-space: nowrap;
+}
