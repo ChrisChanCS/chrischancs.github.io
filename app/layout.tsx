@@ -38,6 +38,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Haowei Chen' }],
   creator: 'Haowei Chen',
+  verification: {
+    google: 'oUdG579LfPSeKHDQmt7apQVXXf-Vyi9d-JvmXmMmDGo',
+  },
   openGraph: {
     type: 'website',
     url: 'https://chrischancs.github.io/haowei.github.io/',
