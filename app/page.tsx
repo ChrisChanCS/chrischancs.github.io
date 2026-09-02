@@ -21,7 +21,7 @@ export default function HomePage() {
               style={{ textTransform: 'none', fontWeight: 'bold' }}
             >
               Hi! I am a third-year Ph.D. student in Computer Science at UT
-              Austin, advised by Professor{' '}
+              Austin, fortunately advised by Professor{' '}
               <a
                 href="https://www.cs.utexas.edu/~witchel/index.html"
                 target="_blank"
