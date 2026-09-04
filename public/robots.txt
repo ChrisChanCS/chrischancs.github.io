@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /api
+
+Sitemap: https://chrischancs.github.io/sitemap.xml

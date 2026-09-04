@@ -44,7 +44,7 @@ const SideBar: React.FC = () => (
       <p className="copyright">
         Source code of this website is available{' '}
         <a
-          href="https://github.com/mldangelo/personal-site"
+          href="https://github.com/ChrisChanCS/chrischancs.github.io"
           target="_blank"
           rel="noopener noreferrer"
         >

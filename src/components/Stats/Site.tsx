@@ -18,7 +18,7 @@ const Stats: React.FC = () => {
     const fetchData = async () => {
       try {
         const res = await fetch(
-          'https://api.github.com/repos/mldangelo/personal-site',
+          'https://api.github.com/repos/ChrisChanCS/chrischancs.github.io',
         );
         const resData: GitHubRepoData = await res.json();
 

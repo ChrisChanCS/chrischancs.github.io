@@ -6,6 +6,16 @@ import GoogleAnalytics from '@/components/Template/GoogleAnalytics';
 import Navigation from '@/components/Template/Navigation';
 import '@/static/css/main.scss';
 
+const siteUrl = 'https://chrischancs.github.io/';
+
+const websiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Haowei Chen',
+  alternateName: ["Haowei Chen's Home Page", 'chrischancs.github.io'],
+  url: siteUrl,
+};
+
 const sourceSans = Source_Sans_3({
   weight: ['400', '700'],
   subsets: ['latin'],
@@ -21,7 +31,10 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://chrischancs.github.io/haowei.github.io/'),
+  metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: '/',
+  },
   title: {
     default: "Haowei Chen's Home Page",
     template: '%s | Haowei Chen',
@@ -43,7 +56,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    url: 'https://chrischancs.github.io/haowei.github.io/',
+    url: siteUrl,
     locale: 'en_US',
     siteName: 'Haowei Chen',
     title: 'Haowei Chen',
@@ -71,6 +84,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${sourceSans.variable} ${raleway.variable}`}>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteJsonLd).replace(/</g, '\\u003c'),
+          }}
+        />
         <div id="wrapper">
           <Navigation />
           {children}

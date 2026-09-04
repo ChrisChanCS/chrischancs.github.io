@@ -15,7 +15,7 @@ const data: ContactItem[] = [
     icon: faEnvelope,
   },
   {
-    link: 'https://github.com/ChrisChanCS/haowei.github.io',
+    link: 'https://github.com/ChrisChanCS/chrischancs.github.io',
     label: 'GitHub',
     icon: faGithub,
   },
