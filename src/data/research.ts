@@ -38,7 +38,7 @@ export const publications: Publication[] = [
       { name: 'Nam Sung Kim' },
       { name: 'Emmett Witchel' },
     ],
-    status: 'To appear',
+    status: 'Published',
     venue: 'SOSP',
     links: [
       {

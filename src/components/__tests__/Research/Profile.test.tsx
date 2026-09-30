@@ -30,7 +30,7 @@ describe('ResearchProfile', () => {
       'href',
       'https://dl.acm.org/doi/epdf/10.1145/3830418.3843906',
     );
-    expect(screen.getByText('SOSP 2026 (to appear)')).toBeInTheDocument();
+    expect(screen.getByText('SOSP 2026')).toBeInTheDocument();
   });
 
   it('highlights the profile owner', () => {
