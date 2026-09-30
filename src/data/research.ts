@@ -40,7 +40,12 @@ export const publications: Publication[] = [
     ],
     status: 'To appear',
     venue: 'SOSP',
-    links: [],
+    links: [
+      {
+        label: 'SOSP',
+        url: 'https://dl.acm.org/doi/epdf/10.1145/3830418.3843906',
+      },
+    ],
   },
   {
     title: 'Tigon: A Distributed Database for a CXL Pod',

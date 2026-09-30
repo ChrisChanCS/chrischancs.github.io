@@ -38,10 +38,8 @@ export default function ResearchProfile() {
       <div className="simple-publication-list">
         {publications.map((publication) => {
           const paperUrl =
-            publication.status === 'To appear'
-              ? undefined
-              : (publication.links.find((link) => link.label === 'Journal')
-                  ?.url ?? publication.links[0]?.url);
+            publication.links.find((link) => link.label === 'Journal')?.url ??
+            publication.links[0]?.url;
 
           return (
             <article

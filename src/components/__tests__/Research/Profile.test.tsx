@@ -23,10 +23,13 @@ describe('ResearchProfile', () => {
       .closest('article');
     expect(borgesPublication).not.toBeNull();
     expect(
-      within(borgesPublication as HTMLElement).queryByRole('link', {
+      within(borgesPublication as HTMLElement).getByRole('link', {
         name: 'Paper',
       }),
-    ).not.toBeInTheDocument();
+    ).toHaveAttribute(
+      'href',
+      'https://dl.acm.org/doi/epdf/10.1145/3830418.3843906',
+    );
     expect(screen.getByText('SOSP 2026 (to appear)')).toBeInTheDocument();
   });
 
